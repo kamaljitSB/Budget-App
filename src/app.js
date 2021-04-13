@@ -19,9 +19,9 @@ budgetListDiv = document.querySelector('.main')
 function getBudgetAmount(totalbudget, expensive_amount){
     // if(Number.isFinite(expensive_amount) == false){
         
-    let valueForExpense = expensive_amount.value
-    let valuearr = valueForExpense.split()
-    let valueAmount = valuearr[0]
+    // let valueForExpense = expensive_amount.value
+    // let valuearr = valueForExpense.split()
+    // let valueAmount = valuearr[0]
     
 
     let budget_data = totalbudget.value
@@ -30,14 +30,14 @@ function getBudgetAmount(totalbudget, expensive_amount){
     amount.value = BudgetAmount;
     totalbudget.value = '';
     
-    remaining_balance = parseFloat(amount)- parseFloat(valueAmount)
-    display_budget(amount,remaining_balance)
+    // remaining_balance = parseFloat(amount)- parseFloat(valueAmount)
+    display_budget(amount)
 }
 
-function display_budget(totalbudget,remaining_balance) {
+function display_budget(totalbudget) {
     BudgetAmount.innerHTML = `
     <h2>My Budget: ${totalbudget}</h2>
-    <h3>Current remaining budget: ${remaining_balance}</h3>
+    <h3>Current remaining budget: ${totalbudget}</h3>
     `
     budgetListDiv.appendChild(BudgetAmount)
 }
