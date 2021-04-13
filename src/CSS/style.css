@@ -1,0 +1,96 @@
+*{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.whole-page {
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "T m m "
+    "E m m";
+}
+
+.main {
+    grid-area: m;
+}
+
+.title h1{
+    grid-area: h;
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.total-budget-section {
+    grid-area: T;
+    display: grid;
+    width: 20px;
+    grid-template-areas: 
+    "i i "
+    "b b ";
+
+}
+.total-budget-section input{
+    grid-area: i;
+    border: none;
+    border-bottom: 3px solid blue;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.total-budget-section button {
+    grid-area: b;
+    font-size: 1.5rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+}
+
+.expense-section {
+    grid-area: E;
+    display: grid;
+    width: 20px;
+    grid-template-areas: 
+    "I I"
+    "I2 I2"
+    "B B";
+    margin-top: 3rem;
+}
+
+.expense-section .input-name{
+    grid-area: I;
+    border: none;
+    border-bottom: 3px solid blue;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.expense-section .input-amount{
+    grid-area: I2;
+    border: none;
+    border-bottom: 3px solid blue;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.expense-section button {
+    grid-area: B;
+    font-size: 1.5rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+}
+
+
+
